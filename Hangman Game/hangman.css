@@ -1,0 +1,142 @@
+body {
+  margin-top: 0;
+  font-family: "Helvetica Bold", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  background-image: url("Background.jpg");
+  min-height: 100vh;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.container {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.title {
+  font-size: 3em;
+  margin-bottom: 40px;
+}
+
+#score {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.image-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.fixed-height-image {
+  height: 200px;
+}
+
+#word-container {
+  font-size: 2em;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+#theme-select {
+  text-align: center;
+}
+
+p {
+  font-size: 1.25em;
+  margin: 10px 0;
+}
+
+.guess-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guess-container p {
+  margin: 0;
+  padding-right: 10px;
+}
+
+#guessInput {
+  height: 30px;
+  width: 40px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#newGameBtn {
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#newGameBtn:hover {
+  background-color: #45a049;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#power-ups button:nth-child(1) {
+  background-color: #ff5722;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#power-ups button:nth-child(1):hover {
+  background-color: #e64a19;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#power-ups button:nth-child(2) {
+  background-color: #ffc107;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#power-ups button:nth-child(2):hover {
+  background-color: #ffb300;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#theme {
+  font-size: 18px;
+  padding: 10px;
+  height: 45px;
+  width: 150px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#incorrect-letters {
+  color: red;
+  display: inline-block;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  vertical-align: top;
+}

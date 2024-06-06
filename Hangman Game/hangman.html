@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="hangman.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Hangman</h1>
+      <div class="image-button-container">
+        <img
+          src="empty.svg"
+          alt="hangman"
+          id="hangmanImage"
+          class="fixed-height-image"
+        />
+      </div>
+    </div>
+    <div id="word-container" data-word=""></div>
+    <div id="incorrect-letters">Incorrect guesses:</div>
+    <div id="theme-select">
+      <p>
+        Choose a theme:
+        <select id="theme" onchange="handleThemeChange()">
+          <option value="animal">Animals</option>
+          <option value="color">Colors</option>
+          <option value="fruit">Fruits</option>
+        </select>
+      </p>
+      <div class="guess-container">
+        <p>
+          Guess a letter: <input type="text" id="guessInput" maxlength="1" />
+        </p>
+        <button onclick="checkGuess()">Submit Guess</button>
+      </div>
+      <div id="score">Score: 0</div>
+      <div id="power-ups">
+        <button onclick="usePowerUp('reveal')">Reveal Letter</button>
+        <button onclick="usePowerUp('extraGuess')">Extra Guess</button>
+        <button id="newGameBtn">New Game</button>
+      </div>
+    </div>
+    <script src="hangman.js"></script>
+  </body>
+</html>
