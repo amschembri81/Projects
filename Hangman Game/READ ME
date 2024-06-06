@@ -1,0 +1,25 @@
+Hangman Game Created by: Amanda Morrison, Samantha Roberts, and Sai Krupa Bariki Vidura
+
+Welcome to the Hangman Game! This game allows you to test your vocabulary and guessing skills by trying to guess the hidden word before running out of attempts.
+
+Table of Contents Description Features Installation Usage Game Rules Power-Ups
+
+Description
+
+This Hangman game is built using HTML, CSS, and JavaScript. Players can choose from different themes and try to guess the word by suggesting letters within a limited number of guesses.
+
+Features
+
+Theme Selection: Choose between different themes (Animals, Colors, Fruits). Dynamic Word Display: The word updates dynamically as correct letters are guessed. Score Tracking: Keep track of your score based on correct guesses. Power-Ups: Use special power-ups to reveal a letter or gain an extra guess. Interactive UI: Engaging interface with responsive buttons and images.
+
+How To Play
+
+Open index.html in a web browser. Choose a theme from the dropdown menu (Animals, Colors, Fruits). Enter a letter in the input field and click "Submit Guess". Use power-ups as needed to reveal letters or get extra guesses. Try to guess the word before the hangman is fully drawn!
+
+Game Rules
+
+Choose a theme to start a new game. A word related to the chosen theme will be selected randomly. Enter one letter at a time to guess the word. Correct guesses will reveal the letters in the word. Incorrect guesses will increment the hangman drawing. The game ends when the word is fully guessed or the hangman is fully drawn (6 incorrect guesses).
+
+Power-Ups
+
+Reveal Letter: Reveal a random hidden letter in the word. Extra Guess: Reduce the number of wrong guesses by one.
