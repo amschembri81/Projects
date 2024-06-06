@@ -1,0 +1,32 @@
+{
+  "name": "my-react-app",
+  "version": "1.0.0",
+  "description": "A basic calculator React application",
+  "main": "index.js",
+  "type": "module",  
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.34.0"
+  },
+  "author": "Amanda",
+  "license": "Coursera",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amschembri81/calculator.git"  
+  },
+  "keywords": [
+    "react",
+    "calculator",  
+    "application",
+    "example"
+  ]
+}
