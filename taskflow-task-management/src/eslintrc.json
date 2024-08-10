@@ -1,0 +1,15 @@
+{
+    "extends": [
+      "react-app",
+      "plugin:jsx-a11y/recommended",
+      "plugin:react/recommended",
+      "plugin:react-hooks/recommended",
+      "plugin:import/errors",
+      "plugin:import/warnings",
+      "plugin:prettier/recommended"
+    ],
+    "plugins": ["react", "react-hooks", "jsx-a11y", "import"],
+    "rules": {
+      "prettier/prettier": ["error"]
+    }
+  }
