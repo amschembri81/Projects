@@ -1,0 +1,58 @@
+.budget-container {
+  width: 100%;
+  max-width: 800px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  overflow: hidden;
+  transition: max-height 0.3s ease, background-color 0.3s ease;
+}
+
+.budget-container.collapsed .budget-content {
+  max-height: 100px;
+  overflow: hidden;
+}
+
+.budget-container.expanded .budget-content {
+  max-height: 1000px; 
+}
+
+.budget-container h2 {
+  margin-bottom: 20px;
+}
+
+.income-section, .expense-section, .budget-section, .totals-section, .savings-section, .reports-section {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 30%; 
+  margin-right: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  }
+  
+  button {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+  width: 20%;
+  }
+  
+  button:hover {
+  background-color: lightsalmon;
+  color: gray;
+  }
+  
+  .expand-indicator {
+  margin-top: 10px;
+  font-weight: bold;
+  color: darkblue;
+  text-align: right;
+  }
