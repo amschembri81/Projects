@@ -1,0 +1,132 @@
+Here's a sample `README.md` file for your Employee API built using Node.js:
+
+---
+
+# Employee API
+
+## Overview
+
+The **Employee API** is a simple RESTful API built using Node.js and the HTTP module. It allows for basic operations to manage a list of employees, including retrieving all employees, getting a specific employee by ID, and adding a new employee.
+
+## Features
+
+- **Get All Employees:** Retrieve a list of all employees.
+- **Get Employee by ID:** Retrieve details of a specific employee by their ID.
+- **Add New Employee:** Add a new employee to the list.
+
+## API Endpoints
+
+### 1. Get All Employees
+
+- **Endpoint:** `/employees`
+- **Method:** `GET`
+- **Description:** Retrieves a list of all employees.
+- **Response:**
+  ```json
+  [
+    { "id": 1, "name": "Emmanuel" },
+    { "id": 2, "name": "Agnes" },
+    { "id": 3, "name": "Frederick" }
+  ]
+  ```
+
+### 2. Get Employee by ID
+
+- **Endpoint:** `/employees/:id`
+- **Method:** `GET`
+- **Description:** Retrieves the details of a specific employee by their ID.
+- **Parameters:**
+  - `id` (required): The ID of the employee to retrieve.
+- **Response:** (Success)
+  ```json
+  { "id": 1, "name": "Emmanuel" }
+  ```
+- **Response:** (Error)
+  ```json
+  { "message": "Employee not found" }
+  ```
+
+### 3. Add New Employee
+
+- **Endpoint:** `/employees`
+- **Method:** `POST`
+- **Description:** Adds a new employee to the list.
+- **Request Body:** (JSON)
+  ```json
+  { "name": "New Employee" }
+  ```
+- **Response:** (Success)
+  ```json
+  {
+    "message": "Employee created successfully",
+    "newEmployee": { "id": 4, "name": "New Employee" },
+    "employees": [
+      { "id": 1, "name": "Emmanuel" },
+      { "id": 2, "name": "Agnes" },
+      { "id": 3, "name": "Frederick" },
+      { "id": 4, "name": "New Employee" }
+    ]
+  }
+  ```
+- **Response:** (Error - Invalid Data)
+  ```json
+  { "message": "Invalid employee data" }
+  ```
+- **Response:** (Error - Invalid JSON)
+  ```json
+  { "message": "Invalid JSON" }
+  ```
+
+## Getting Started
+
+### Prerequisites
+
+- **Node.js** installed on your machine.
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/amschembri81/Projects.git
+   ```
+   
+2. **Navigate to the project directory:**
+   ```bash
+   cd Personal-Life-Directory
+   ```
+
+3. **Install dependencies:**
+   This API does not require any additional npm packages beyond Node.js' standard library, so no additional installation steps are necessary.
+
+### Running the Server
+
+1. **Start the server:**
+   ```bash
+   node server.js
+   ```
+
+2. **Access the API:**
+   The server will run on `http://localhost:3000`. You can use tools like Postman or your web browser to interact with the API.
+
+### Example Requests
+
+- **Get all employees:** `http://localhost:3000/employees`
+- **Get an employee by ID:** `http://localhost:3000/employees/1`
+- **Add a new employee:** Send a POST request to `http://localhost:3000/employees` with a JSON body like `{ "name": "New Employee" }`.
+
+## Error Handling
+
+- **404 Not Found:** Returned when an endpoint or resource is not found.
+- **400 Bad Request:** Returned when invalid data is provided in the request body.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
+
+## Contact
+
+For any questions or inquiries, please contact Amanda Schembri at [your-email@example.com].
+
+---
+
+This `README.md` provides a comprehensive overview of the API, its endpoints, and instructions for running and using it. Feel free to customize it further based on your project's specific needs!
